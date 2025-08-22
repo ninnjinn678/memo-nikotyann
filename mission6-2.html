@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoリスト</title>
+    <link rel="stylesheet" href="mission6-2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ToDoリスト</h1>
+        <button id="clear-all-tasks" type="button">削除</button>
+
+        <form id="todo-form">
+            <input type="text" id="todo-input" placeholder="新しいタスクを入力" required>
+            <input type="date" id="date-input" required>
+            <input type="time" id="time-input" required>
+            <select id="color-input" required>
+                <option value="" disabled selected>色を選択</option>
+                <option value="#f28665">赤</option>
+        <option value="#ffca0f">黄色</option>
+        <option value="#c4deee">青</option>
+        <option value="#ffd4d5">ビンク</option>
+        <option value="#b39fd5">紫</option>
+        <option value="#eeab73">オレンジ</option>
+        <option value="#a3e062">緑</option>
+            </select>
+            <button type="submit">追加</button>
+        </form>
+        
+        <!-- カレンダー表示部分 -->
+        <div id="calendar"></div>
+    </div>
+    <script src="mission6-2.js"></script>
+</body>
+</html>
